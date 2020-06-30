@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Your string is " + str_scanner.nextLine()); */
 
         //input and output
-
+/*
         Scanner num = new Scanner(System.in);
         int first,second, result;
         boolean  istrue = false;
@@ -33,17 +33,17 @@ public class Main {
         result= first + second;
         System.out.println("Result:" + result);
 
-        //if (first >=second|| istrue)
+        //if (first >=second || istrue)
         istrue = first>=second ? true :false;
                 System.out.println("first >=second: " + istrue);
 
         //if (first ==51|| istrue)
 
         istrue = first == 51;
-        System.out.println("first == 51: " + istrue);
+        System.out.println("first = 51: " + istrue);
         //z += 20 z+=20;
         first+=1;
-        System.out.println("first+=first:" + first);
+        System.out.println("first+=1:" + first);
 
         switch (first){
         case 51:
@@ -55,6 +55,72 @@ public class Main {
         default:
         System.out.println("first equil 3" +first);
         break;}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Создайте условный оператор switch case для проверки числовой переменной.
+
+                Если переменная равна 3 - выведите в консоль надпись "Три";
+        Переменная равна 7 - выведите надпись "Семь";
+        Для всего остального выведите надпись "Что-то другое".
+         */
+
+
+        Scanner scan = new Scanner(System.in);
+        int test_num;
+        System.out.println("Input number");
+
+        test_num=scan.nextInt();
+
+        switch (test_num){
+            case(3):
+                System.out.println("three");
+                break;
+            case(7):
+                System.out.println("seven");
+                break;
+            default:
+                System.out.println("something another");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
