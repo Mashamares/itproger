@@ -58,17 +58,6 @@ public class Main {
 
 /*
 
-
-
-
-
-
-
-
-
-
-
-
         /*Создайте условный оператор switch case для проверки числовой переменной.
 
                 Если переменная равна 3 - выведите в консоль надпись "Три";
@@ -76,7 +65,7 @@ public class Main {
         Для всего остального выведите надпись "Что-то другое".
          */
 
-
+ /*
         Scanner scan = new Scanner(System.in);
         int test_num;
         System.out.println("Input number");
@@ -93,36 +82,47 @@ public class Main {
             default:
                 System.out.println("something another");
         }
+ */
 
+        // CICLES For WHile Do while
 
+        //FOR
+        for (int i = 100; i >= 10; i -= 10)
+            System.out.println(i);
 
+        //While
+        int j = 12;
+        while (j > 7) {
+            System.out.println("J=12 j-=2 " + j);
+            j -= 2;
 
+        }
 
+        boolean istrue = true;
+        int k = 0;
+        while (istrue) {
+            System.out.println("is true <5 - " + k);
+            k++;
+            if (k > 3) {
+                System.out.println("is true <3 -> false " + k);
+                istrue = false;
+            }
+        }
 
+        //Do while
+        int z = 5;
+        do {
+            System.out.println("z<4 " + z);
+        } while (z < 4);
 
+        //Continue
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        int q=0;
+        while (q < 100) {
+            q+=1;
+            if (q %2 ==0)
+                continue;
+            System.out.println(q);
+        }
     }
 }
