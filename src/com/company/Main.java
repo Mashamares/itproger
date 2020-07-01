@@ -85,7 +85,7 @@ public class Main {
  */
 
         // CICLES For WHile Do while
-
+/*
         //FOR
         for (int i = 100; i >= 10; i -= 10)
             System.out.println(i);
@@ -123,6 +123,20 @@ public class Main {
             if (q %2 ==0)
                 continue;
             System.out.println(q);
+        }
+  */
+      /*  int a = 9;
+        boolean isDone = false;
+        if (a % 3 != 0 || isDone)
+            System.out.print("Готово");
+*/
+        int a = 9;
+        switch (a) {
+            case 0: System.out.print ("0");
+            case 5: System.out.print ("5"); break;
+            case 9: System.out.print ("9");
+            case 10: System.out.print ("10"); break;
+            default: System.out.print ("!");
         }
     }
 }
