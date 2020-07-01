@@ -130,7 +130,7 @@ public class Main {
         if (a % 3 != 0 || isDone)
             System.out.print("Готово");
 */
-        int a = 9;
+    /*    int a = 9;
         switch (a) {
             case 0: System.out.print ("0");
             case 5: System.out.print ("5"); break;
@@ -138,5 +138,31 @@ public class Main {
             case 10: System.out.print ("10"); break;
             default: System.out.print ("!");
         }
+*/
+
+        //test array
+        int[] test_array = new int[]{31, 98, 3};
+        System.out.println(test_array[2]);
+
+        int[] a;
+        int n;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input length of array");
+
+        n = scan.nextInt();
+        a = new int[n];
+        for (int i = 0; i < n; i++)
+        {       System.out.println("Input member for array");
+                a[i] = scan.nextInt();
+        }
+
+        int max=a[0];
+        for (int i=0;i<n;i++)
+        {
+            if(a[i]>max)
+                max=a[i];
+        }
+        System.out.println(max);
     }
 }
