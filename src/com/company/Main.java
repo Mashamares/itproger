@@ -139,8 +139,8 @@ public class Main {
             default: System.out.print ("!");
         }
 */
-
-        //test array
+/*
+        //test array, array.length
         int[] test_array = new int[]{31, 98, 3};
         System.out.println(test_array[2]);
 
@@ -156,7 +156,7 @@ public class Main {
         {       System.out.println("Input member for array");
                 a[i] = scan.nextInt();
         }
-
+//max element search
         int max=a[0];
         for (int i=0;i<n;i++)
         {
@@ -164,5 +164,39 @@ public class Main {
                 max=a[i];
         }
         System.out.println(max);
+
+        char [][] array_two = new char[][];
+        */
+        //int temp = func(3, 4);
+        func(3, 4);
+        // System.out.println(temp);
+
+        readArray();
+
+    }
+    //function return array
+    public static int [] readArray(){
+        int n;
+        int [] arr;
+        Scanner in = new Scanner(System.in);
+        n=in.nextInt();
+        arr=new int[n];
+
+        for (int i=0;i<n;i++)
+            arr[i]=in.nextInt();
+
+        for (int i=0;i<n;i++)
+            System.out.println(arr[i]);
+        return arr;
+    }
+
+
+    public static void func(int a, int b) {
+        int result = 1;
+        for (int i = 0; i < b; i++)
+            result *= a;
+        System.out.println(result);
+      //  func(2,7); // stackOverflowError - recursion
+        //return result;
     }
 }
