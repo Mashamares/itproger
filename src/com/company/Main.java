@@ -168,10 +168,11 @@ public class Main {
         char [][] array_two = new char[][];
         */
         //int temp = func(3, 4);
-        func(3, 4);
-        // System.out.println(temp);
+        func(3, 4);  // function
+        // System.out.println(temp); // function
 
         readArray();
+
 
     }
     //function return array
